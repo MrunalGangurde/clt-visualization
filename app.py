@@ -109,6 +109,12 @@ probplot(sample_means, dist="norm", plot=ax)
 ax.set_title("QQ Plot")
 st.pyplot(fig)
 
+# Summary Table
+st.header("Summary Statistics")
+st.write(pd.DataFrame({
+    "Metric": ["Population Mean", "Sample Mean", "Population Std Dev", "Sample Std Dev"],
+    "Value": [np.mean(population), np.mean(sample_means), np.std(population), np.std(sample_means)]
+
 # Visualization
 st.header("Visualization")
 cols = st.columns(sample_size)
@@ -144,10 +150,4 @@ ax.set_title("Final Visualization Simulation")
 ax.set_xlabel("Final Position")
 ax.set_ylabel("Count")
 st.pyplot(fig)
-
-# Summary Table
-st.header("Summary Statistics")
-st.write(pd.DataFrame({
-    "Metric": ["Population Mean", "Sample Mean", "Population Std Dev", "Sample Std Dev"],
-    "Value": [np.mean(population), np.mean(sample_means), np.std(population), np.std(sample_means)]
 }))
