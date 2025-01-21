@@ -109,7 +109,7 @@ probplot(sample_means, dist="norm", plot=ax)
 ax.set_title("QQ Plot")
 st.pyplot(fig)
 
-# Galton Board Visualization
+# Visualization
 st.header("Visualization")
 cols = st.columns(sample_size)
 
