@@ -10,7 +10,7 @@ This project is an interactive Streamlit application that demonstrates the Centr
   - Population Distribution with kernel density estimation (KDE).
   - Distribution of Sample Means with overlays of theoretical normal curves.
   - QQ Plot for normality testing of sample means.
-  - Interactive Galton Board simulation to visualize the CLT in action.
+  - Interactive Visualization simulation to visualize the CLT in action.
 - **Summary Statistics:** Display key metrics such as population mean, sample mean, population standard deviation, and sample standard deviation.
 
 ## Installation
